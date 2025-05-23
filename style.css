@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+ background: linear-gradient(to bottom right, #ffe4e1, #fffafa);
   background-size: 1000px;
   background: url('https://thumbs.dreamstime.com/b/vintage-grunge-wallpaper-design-features-texture-faded-floral-motifs-distressed-elements-sepia-color-palette-rustic-338420462.jpg');
   background-size: cover;
