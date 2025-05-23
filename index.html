@@ -98,6 +98,8 @@
   </noscript>
 
   <!-- Password Gate -->
+<audio id="bg-music" src="./music/m.m4a" preload="auto"></audio>
+
   <div id="password-overlay">
     <h2><img src="./images/" alt="" srcset=""></h2>
     <input type="password" id="password-input" placeholder="Enter password">
@@ -157,20 +159,22 @@
       overlay.classList.add("visible");
     }
 
-    function checkPassword() {
-      const input = document.getElementById("password-input").value;
-      const remember = document.getElementById("rememberMe").checked;
+function checkPassword() {
+  const input = document.getElementById("password-input").value;
+  const remember = document.getElementById("rememberMe").checked;
 
-      if (input === PASSWORD) {
-        overlay.style.display = "none";
-        content.style.display = "block";
-        if (remember) {
-          localStorage.setItem("authenticated", "true");
-        }
-      } else {
-        document.getElementById("error-msg").style.display = "block";
-      }
+  if (input === PASSWORD) {
+    overlay.style.display = "none";
+    content.style.display = "block";
+    document.getElementById("bg-music").play(); // Play the song
+    if (remember) {
+      localStorage.setItem("authenticated", "true");
     }
+  } else {
+    document.getElementById("error-msg").style.display = "block";
+  }
+}
+
 
     window.onload = () => {
       if (localStorage.getItem("authenticated") === "true") {
