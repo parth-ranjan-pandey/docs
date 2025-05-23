@@ -167,6 +167,7 @@ function checkPassword() {
     overlay.style.display = "none";
     content.style.display = "block";
     document.getElementById("bg-music").play(); // Play the song
+    document.getElementById("bg-music").volume=0.5;
     if (remember) {
       localStorage.setItem("authenticated", "true");
     }
