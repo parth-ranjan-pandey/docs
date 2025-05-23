@@ -10,16 +10,18 @@ body {
   justify-content: center;
 
   background-size: 1000px;
-  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
-  background-position: center center;
+  background: url('https://thumbs.dreamstime.com/b/vintage-grunge-wallpaper-design-features-texture-faded-floral-motifs-distressed-elements-sepia-color-palette-rustic-338420462.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .paper {
-  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  background-image: url("https://th.bing.com/th/id/R.e10c922d32023575cd1d9b9d73ecdbe9?rik=PJ9XmOrtzxutbQ&riu=http%3a%2f%2fwww.textures4photoshop.com%2ftex%2fthumbs%2fvintage-paper-texture-thumb21.jpg&ehk=MeKjAyWO3BWLg81r0KNeKedYwxRwuETqQJyrz7fLXLs%3d&risl=&pid=ImgRaw&r=0");
   background-size: 500px;
   background-position: center center;
-  padding: 20px 100px;
-/*  min-width: 800px; */
+  padding: 25px 105px;
+
   
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
@@ -65,9 +67,9 @@ img {
 p {
   font-family: 'Zeyada';
   font-size: 50px;
-  color: rgb(0,0,100);
+  color: maroon;
   opacity: 0.75;
   user-select: none;
   
-  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+   filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
 }

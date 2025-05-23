@@ -1,3 +1,4 @@
+// for moblile
 let highestZ = 1;
 
 class Paper {
